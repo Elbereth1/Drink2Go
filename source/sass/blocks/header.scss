@@ -1,0 +1,23 @@
+.header {
+  min-height: 60px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 80px;
+    display: flex;
+  }
+}
+
+.header__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 230px;
+    max-width: 150px;
+    font-size: 12px;
+    line-height: 1.33;
+  }
+}
+

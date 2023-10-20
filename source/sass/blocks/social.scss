@@ -1,0 +1,47 @@
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  gap: 20px;
+  padding: 0;
+  margin-left: auto;
+}
+
+.social__item {
+  width: 40px;
+  height: 40px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $baseSecondary;
+  }
+
+  &:active {
+    background-color: $primaryOpacity;
+  }
+}
+
+.social__link:hover .social__img,
+.social__link:focus .social__img {
+  fill: $basePrimary;
+}
+
+.social__link:active .social__img {
+  fill: $basePrimary;
+}
+
+.social__img {
+  fill: $baseGrey;
+  width: 100%;
+  height: 100%;
+}
+
+

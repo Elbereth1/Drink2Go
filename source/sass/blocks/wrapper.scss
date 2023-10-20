@@ -1,0 +1,21 @@
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: $desktop-width;
+  background-color: $baseWhite;
+}
+
+.wrapper iframe {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 420px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 480px;
+  }
+
+  @media (max-width: $desktop-width) {
+    min-height: 540px;
+  }
+}

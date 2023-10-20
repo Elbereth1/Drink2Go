@@ -1,0 +1,110 @@
+.control-group__list {
+  padding: 0;
+}
+
+.control-group__item:not(:last-child) {
+  margin: 0 0 20px;
+}
+
+.control-group__control {
+  position: relative;
+  display: block;
+  padding: 0 2px 0 34px;
+
+  &--checkbox {
+    padding-left: 52px;
+  }
+}
+
+.control-group__control-mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    background-color: $baseGrey;
+    width: 42px;
+    border-radius: 34px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 2px;
+      bottom: 2px;
+      background-color: $baseWhite;
+      border-radius: 50%;
+      transition: .4s;
+    }
+  }
+}
+
+.control-group__input[type="radio"]:checked + .control-group__control-mark {
+  border: 2px solid $basePrimary;
+}
+
+.control-group__input[type="radio"]:checked + .control-group__control-mark::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  background-color: $basePrimary;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-group__input[type="radio"]:not(:checked) + .control-group__control-mark {
+  border: 2px solid $baseGrey;
+}
+
+.control-group__input[type="checkbox"]:checked + .control-group__control-mark {
+  background-color: $basePrimary;
+}
+
+.control-group__input[type="checkbox"]:checked + .control-group__control-mark::before {
+  transform: translateX(18px);
+}
+
+
+.control-group__sorting-container {
+  width: 165px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $basePrimary;
+  padding: 4px 10px;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.control-group__sorting-button {
+  transform: rotate(-90deg);
+  border: none;
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  background-color: transparent;
+
+  &:active .control-group__sorting-button-img {
+    transform: rotate(180deg);
+  }
+}
+
+.control-group__sorting-button-img {
+  fill: $basePrimary;
+}

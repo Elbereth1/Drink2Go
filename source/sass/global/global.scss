@@ -1,0 +1,13 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $baseWhite;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 400;
+  margin: 0 auto;
+  color: $baseBlack;
+}

@@ -1,0 +1,70 @@
+.user-list {
+  padding: 0 60px 0;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: right;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    padding: 0 20px 0 0;
+  }
+}
+
+.user-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 19px;
+  color: $baseBlack;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    font-size: 12px;
+    line-height: 1.33;
+    text-transform: uppercase;
+  }
+
+  &:active {
+    background-color: $baseSecondary;
+  };
+}
+
+.user-list__img {
+  @media (min-width: $desktop-width) {
+    margin-right: 8px;
+  }
+}
+
+.user-list__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    font-size: 12px;
+    line-height: 1.33;
+    text-transform: uppercase;
+  }
+}
+
+.user-list__link:hover .user-list__img {
+  @media (min-width: $desktop-width) {
+    fill: $basePrimary;
+    color: $basePrimary;
+  }
+}
+
+.user-list__link:focus + .user-list__img {
+  @media (min-width: $desktop-width) {
+    fill: $basePrimary;
+    color: $basePrimary;
+  }
+}
+
+
+

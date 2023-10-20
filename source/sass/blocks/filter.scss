@@ -1,0 +1,13 @@
+.filter {
+  background-color: $lightestGrey;
+  padding: 50px 20px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 20px 35px;
+  }
+}
+.filter__title {
+  margin: 0 0 20px;
+}
+
+
