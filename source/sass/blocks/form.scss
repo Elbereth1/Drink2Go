@@ -1,8 +1,26 @@
+.form__desktop-wrapper {
+  @media (min-width: $desktop-width) {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    padding: 44px 5px 0 40px;
+  }
+}
+
 .form__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    float: left;
+    display: block;
   }
 }
 
@@ -43,6 +61,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
   }
 }
 

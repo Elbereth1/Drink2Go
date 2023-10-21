@@ -8,6 +8,10 @@
 }
 .filter__title {
   margin: 0 0 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 

@@ -90,21 +90,24 @@
   border: none;
   border-radius: 4px;
   background-color: transparent;
-}
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
-.control-group__sorting-button {
-  transform: rotate(-90deg);
-  border: none;
-  position: absolute;
-  top: 1px;
-  right: 10px;
-  background-color: transparent;
-
-  &:active .control-group__sorting-button-img {
+  &:active + .control-group__sorting-img {
     transform: rotate(180deg);
   }
 }
 
-.control-group__sorting-button-img {
+.control-group__sorting-img {
+  border: none;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: transparent;
+}
+
+.control-group__sorting-img {
   fill: $basePrimary;
+  transform: rotate(-90deg);
 }

@@ -11,6 +11,7 @@
     padding: 30px 80px 60px;
     flex-direction: row;
     gap: 30px;
+    align-items: center;
   }
 
   &--first {
@@ -20,6 +21,7 @@
 
     @media (min-width: $tablet-width) {
       background: linear-gradient(to bottom, $flatWhite 75%, $baseWhite 25%, $baseWhite 25%);
+
     }
     @media (min-width: $desktop-width) {
       background: $flatWhite;
@@ -62,18 +64,26 @@
   margin: 0 auto 10px;
 
   @media (min-width: $tablet-width) {
+    width: 476px;
+    height: auto;
+  }
 
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: auto;
   }
 }
 
 .slide__text-wrapper {
-  @media (min-width: $tablet-width) {
 
-  }
 }
 
 .slide__marker {
   margin: 0 auto 4px;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .slide__title {
@@ -91,6 +101,10 @@
     line-height: 1.42;
     margin: 0 0 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .slide__description {
@@ -102,6 +116,10 @@
     font-size: 20px;
     line-height: 1.6;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .slide__wrapper {
@@ -111,6 +129,10 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: left;
   }
 }
 
@@ -124,6 +146,10 @@
     font-size: 16px;
     line-height: 2;
     margin: 0 6px 0 25px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
 
     &::before {
       content: '';

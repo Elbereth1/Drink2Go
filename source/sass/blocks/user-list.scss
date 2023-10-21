@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 19px;
+  padding: 22px;
   color: $baseBlack;
 
   @media (min-width: $tablet-width) {
@@ -36,6 +36,8 @@
 }
 
 .user-list__img {
+  fill: $baseBlack;
+
   @media (min-width: $desktop-width) {
     margin-right: 8px;
   }
@@ -52,19 +54,22 @@
   }
 }
 
-.user-list__link:hover .user-list__img {
+.user-list__link:hover .user-list__img,
+.user-list__link:hover .user-list__text,
+.user-list__link:focus .user-list__img,
+.user-list__link:focus .user-list__text{
   @media (min-width: $desktop-width) {
     fill: $basePrimary;
     color: $basePrimary;
   }
 }
 
-.user-list__link:focus + .user-list__img {
+.user-list__link:active .user-list__img,
+.user-list__link:active .user-list__text {
+
   @media (min-width: $desktop-width) {
     fill: $basePrimary;
     color: $basePrimary;
+    background-color: $baseSecondary;
   }
 }
-
-
-

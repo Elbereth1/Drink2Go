@@ -10,6 +10,7 @@
 
 .header__text {
   display: none;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     display: flex;

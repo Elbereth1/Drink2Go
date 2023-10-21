@@ -24,20 +24,24 @@
 
   }
 
-  &:active {
-    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
-  }
-
   &:disabled {
     fill: $baseGrey;
   }
 
   &--prev {
     left: 0;
+
+    &:active {
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+    }
   }
 
   &--next {
     right: 0;
+
+    &:active {
+      background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+    }
   }
 
   &--next .slider__button-img {
